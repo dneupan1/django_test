@@ -1,3 +1,7 @@
-from django.test import TestCase
+import pytest
 
-# Create your tests here.
+from .models import add
+
+
+def test_add():
+    assert add(1, 2) == 3
