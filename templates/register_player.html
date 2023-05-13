@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Register Player{% endblock %}
+
+{% block content %}
+    {%  if user.is_authenticated %}
+        Hi {{ user.username }}
+
+        <h2>New Player Registration Form</h2>
+        <p>Registration Form</p>
+
+        <p><a href="{%  url 'logout' %}">Log Out</a></p>
+    {% else %}
+        <p>You are not logged in. Please login to continue</p>
+        <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
+{% endblock %}
