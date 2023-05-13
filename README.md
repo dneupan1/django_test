@@ -25,7 +25,16 @@ Project uses pytest to Use the following command to run the unit test:
  
 
 ## Deployment Guide
+To run the ASGI application, use the following command:
+>python -m uvicorn myproject.asgi:application
+
+To deploy on a linux machine, use the following command:
+>python -m gunicorn myproject.asgi:application -k uvicorn.workers.UvicornWorker
+
+TODO: Figure out a way to deploy in windows
 
 
+#### Note: All references have been taken from Djago's official documentation.
+https://docs.djangoproject.com/en/4.2/howto/deployment/
 
 
