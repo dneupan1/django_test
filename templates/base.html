@@ -1,5 +1,10 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="{% static 'w3.css' %}">
+{% block stylesheet %}
+{% endblock %}
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
