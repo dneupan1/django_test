@@ -11,6 +11,7 @@ the requirements.txt file. CircleCI build takes requirements.txt for dependency 
 
 ### Creating a new SQLite database
 To create a new SQLite database, run the following command
+python manage.py migrate
 
 ### Running the development server
 To run the development server on local machine run the following command:
